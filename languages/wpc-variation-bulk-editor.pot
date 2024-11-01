@@ -1,0 +1,96 @@
+# Copyright (C) 2024 WPClever
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: WPC Variation Bulk Editor for WooCommerce 1.1.8\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpc-variation-bulk-editor\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-07-25T03:17:21+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.5.0\n"
+"X-Domain: wpc-variation-bulk-editor\n"
+
+#. Plugin Name of the plugin
+msgid "WPC Variation Bulk Editor for WooCommerce"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://wpclever.net/"
+msgstr ""
+
+#. Description of the plugin
+msgid "WPC Variation Bulk Editor helps you save precious time working on variations."
+msgstr ""
+
+#. Author of the plugin
+msgid "WPClever"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://wpclever.net"
+msgstr ""
+
+#: includes/class-backend.php:32
+#: includes/class-backend.php:151
+msgid "Bulk Generate"
+msgstr ""
+
+#: includes/class-backend.php:35
+#: includes/class-backend.php:149
+msgid "Bulk Remove"
+msgstr ""
+
+#: includes/class-backend.php:38
+#: includes/class-backend.php:148
+msgid "Variation Bulk Editor"
+msgstr ""
+
+#: includes/class-backend.php:51
+#: includes/class-backend.php:73
+msgid "Filter variations by attributes"
+msgstr ""
+
+#: includes/class-backend.php:65
+msgid "Update"
+msgstr ""
+
+#: includes/class-backend.php:80
+msgid "Remove"
+msgstr ""
+
+#: includes/class-backend.php:87
+msgid "Select variation attributes"
+msgstr ""
+
+#: includes/class-backend.php:94
+msgid "Generate"
+msgstr ""
+
+#. translators: attribute
+#: includes/class-backend.php:115
+msgid "Any %s..."
+msgstr ""
+
+#. translators: count
+#: includes/class-backend.php:129
+#: includes/class-backend.php:168
+msgid "%s variation will be affected"
+msgid_plural "%s variations will be affected"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-backend.php:150
+msgid "Are you sure you want to delete these variations? This cannot be undone."
+msgstr ""
+
+#: includes/class-backend.php:152
+msgid "Do you want to generate variations? This will create a new variation for each and every possible combination of selected attributes."
+msgstr ""
+
+#: includes/class-backend.php:153
+msgid "No change"
+msgstr ""

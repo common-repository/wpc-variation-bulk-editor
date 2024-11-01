@@ -1,0 +1,282 @@
+@keyframes wpcvb-spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes wpcvb-spinner {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.wpcvb-btn-wrapper {
+  padding: 9px 12px;
+  border-bottom: 1px solid #eee;
+
+  .wpcvb-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    span {
+      margin-right: 5px;
+    }
+  }
+}
+
+.wpcvb-popup {
+  display: none;
+  padding: 0 !important;
+
+  &.wpcvb-loading {
+    pointer-events: none;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 10;
+      display: block;
+      width: 30px;
+      height: 30px;
+      margin-top: -15px;
+      margin-left: -15px;
+      border-width: 4px;
+      border-style: solid;
+      border-radius: 100%;
+      border-top-color: rgba(0, 0, 0, .5);
+      border-left-color: rgba(0, 0, 0, .1);
+      border-bottom-color: rgba(0, 0, 0, .1);
+      border-right-color: rgba(0, 0, 0, .1);
+      animation: wpcvb-spinner 1s linear infinite;
+      -webkit-animation: wpcvb-spinner 1s linear infinite;
+    }
+
+    &:after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, .05);
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 9;
+      pointer-events: none;
+    }
+  }
+
+  .woocommerce_variation {
+    > h3 {
+      display: none !important;
+    }
+
+    .woocommerce_variable_attributes {
+      display: block !important;
+      border-top: none !important;
+
+      p, select {
+        max-width: 100% !important;
+      }
+
+      .form-field .wrap {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      .variable_sku_field {
+        opacity: .5;
+        pointer-events: none !important;
+      }
+
+      /*
+      .form-row.options {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        > label {
+          display: flex !important;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      */
+    }
+  }
+
+  .wpcvb-submit {
+    text-align: center;
+    padding: 0 2em 2em 2em;
+  }
+
+  .wpcvb-filter {
+    padding: 2em;
+
+    .wpcvb-filter-heading {
+      text-align: center;
+      font-weight: 700;
+    }
+
+    .wpcvb-filter-count {
+      margin-top: 10px;
+      text-align: center;
+    }
+  }
+
+  &.wpcvb-popup-editor {
+    .wpcvb-filter {
+      border-bottom: 1px dashed #ddd;
+    }
+  }
+
+  &.wpcvb-popup-generate {
+    .wpcvb-filter {
+      .wpcvb-filter-count {
+        display: none;
+      }
+    }
+  }
+
+  /* select2 */
+
+  .select2-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    float: none !important;
+    box-sizing: border-box !important;
+    display: inline-block !important;
+  }
+
+  .select2-search__field {
+    width: auto !important;
+    min-height: 24px !important;
+    height: 24px !important;
+    line-height: 24px !important;
+    max-width: 100% !important;
+    margin-top: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  .select2-container--default .select2-selection--multiple {
+    border: 1px solid #dddddd;
+  }
+
+  .select2-selection__rendered {
+    padding: 0 2px !important;
+    display: block !important;
+  }
+
+  .select2-selection__rendered li {
+    height: 24px !important;
+    line-height: 22px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin-top: 2px !important;
+    margin-bottom: 2px !important;
+    margin-right: 2px !important;
+  }
+
+  .select2-selection__rendered li:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* WPC Dialog */
+
+.ui-dialog.wpc-dialog {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100102;
+  background-color: #fff;
+  border: 1px solid #dfdfdf;
+  border-radius: 0;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+  color: #3c434a;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 13px;
+  line-height: 1.4em;
+}
+
+.ui-dialog.wpc-dialog .ui-dialog-titlebar {
+  background: #fcfcfc;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #dfdfdf;
+  border-radius: 0;
+  height: 36px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 36px;
+  padding: 0 36px 0 16px
+}
+
+.ui-dialog.wpc-dialog .ui-dialog-titlebar .ui-dialog-title {
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ui-dialog.wpc-dialog .ui-dialog-titlebar .ui-dialog-titlebar-close {
+  background: 0 0;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #666;
+  cursor: pointer;
+  display: block;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  outline: none;
+  overflow: hidden;
+  font-size: 0;
+}
+
+.ui-dialog.wpc-dialog .ui-dialog-titlebar .ui-dialog-titlebar-close:before {
+  font: 400 20px/1 dashicons;
+  vertical-align: top;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 36px;
+  width: 36px;
+  height: 36px;
+  content: '\f158';
+}
+
+.ui-dialog.wpc-dialog .ui-dialog-titlebar .ui-dialog-titlebar-close:hover {
+  color: #00a0d2;
+}
+
+.ui-dialog.wpc-dialog .ui-dialog-titlebar .ui-dialog-titlebar-close span {
+  display: none;
+}
+
+.ui-dialog.wpc-dialog .ui-dialog-content {
+  padding: 16px;
+  overflow: auto;
+}
+
+.candlestick-wrapper .candlestick-bg.default .candlestick-toggle {
+  left: 25% !important;
+}
